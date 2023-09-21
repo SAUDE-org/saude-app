@@ -10,6 +10,20 @@ A tecnologia tem impacto muito positivo quando relacionado a saúde, usados em d
 ### Proposta
 Desenvolver um aplicativo para atender as necessidades dos Médicos, Clínicas, Hospitais e Plano de Saúde, facilitando o agendamento de consultas médicas de forma eficiente.
 
+### Prototipação
+
+Fluxo de Telas
+_TODO_
+Tela de Carregamento
+_TODO_
+
+### Referencias
+- Prototipação: [Figma](https://www.figma.com/)
+- Icones: [IconFinder](https://www.iconfinder.com/)
+
+Todos os icones usados no projeto foram encontrados de forma gratuita no IconFinder.
+Todas as imagens de prototipos de tela são de autoria dos integrantes do projeto feitas no Figma.
+
 ### Autores
 
 ###### [Elildes](https://github.com/Elildes)
