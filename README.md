@@ -12,16 +12,22 @@ Desenvolver um aplicativo para atender as necessidades dos Médicos, Clínicas, 
 
 ### Prototipação
 
-Fluxo de Telas
-_TODO_
-Tela de Carregamento
-_TODO_
+#### Fluxo de Telas
+_TODO:_ Detalhar quais as telas que o aplicativo terá e como será feito o fluxo entre elas.
+
+#### Telas
+![Tela de Carregamento](https://github.com/SAUDE-org/saude-app-v2/blob/main/assets/screens/loading_screen.png)
+![Tela Inicial](https://github.com/SAUDE-org/saude-app-v2/blob/main/assets/screens/home_screen.png)
+![Tela de Login](https://github.com/SAUDE-org/saude-app-v2/blob/main/assets/screens/login_screen.png)
+
+_TODO:_ Primeira prototipação das primeiras telas.
 
 ### Referencias
 - Prototipação: [Figma](https://www.figma.com/)
 - Icones: [IconFinder](https://www.iconfinder.com/)
 
 Todos os icones usados no projeto foram encontrados de forma gratuita no IconFinder.
+
 Todas as imagens de prototipos de tela são de autoria dos integrantes do projeto feitas no Figma.
 
 ### Autores
