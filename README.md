@@ -22,6 +22,15 @@ _TODO:_ Detalhar quais as telas que o aplicativo terá e como será feito o flux
 
 _TODO:_ Primeira prototipação das primeiras telas.
 
+### Codificação
+
+- [x] Splash Screen
+- [ ] Pre Register Screen: Ainda não foi possivel inserir o texto "Saúde App" ao lado da imagem como no prototipo, se não for possivel inserir o texto embaixo da imagem.
+- [ ] Register Screen
+- [ ] Login Screen
+- [ ] Recuperar Senha
+- [ ] Home Screen
+
 ### Referencias
 - Prototipação: [Figma](https://www.figma.com/)
 - Icones: [IconFinder](https://www.iconfinder.com/)
