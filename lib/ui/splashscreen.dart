@@ -1,52 +1,78 @@
 import 'package:flutter/material.dart';
-import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:flutter_application_saude_app/ui/preLogin.dart';
+//import 'package:loading_animation_widget/loading_animation_widget.dart';
+import 'package:flutter_application_saude_app/utils.dart';
+//import 'package:google_fonts/google_fonts.dart';
+//import 'package:flutter_application_saude_app/ui/preLogin.dart';
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
-  @override
-  State<SplashScreen> createState() => _SplashScreen();
-}
-
-class _SplashScreen extends State<SplashScreen> {
-  @override
-  void initState() {
-    super.initState();
-    Future.delayed(const Duration(seconds: 4), () {
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => const HomeScreen()));
-    });
-  }
-
+class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          SizedBox(
-            width: 250,
-            height: 250,
-            child: Image.asset('assets/icons/logo_splash_screen.png'),
+    double baseWidth = 375;
+    double fem = MediaQuery.of(context).size.width / baseWidth;
+    double ffem = fem * 0.97;
+    return Container(
+      width: double.infinity,
+      child: TextButton(
+        // splashscreen6rn (9:6)
+        onPressed: () {},
+        style: TextButton.styleFrom(
+          padding: EdgeInsets.zero,
+        ),
+        child: Container(
+          padding:
+              EdgeInsets.fromLTRB(71 * fem, 129 * fem, 71 * fem, 117 * fem),
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: Color(0xffffffff),
           ),
-          const SizedBox(
-            width: 250,
-            height: 100,
-            child: Text(
-              'Saúde App',
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.black, fontSize: 40),
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                // titlescreenGHQ (9:17)
+                margin:
+                    EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 46 * fem),
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      // healthcarehospitalicon1ZXQ (9:20)
+                      width: 233 * fem,
+                      height: 265 * fem,
+                      child: Image.asset(
+                        'assets/screens/healthcarehospitalicon-1-ErW.png',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Text(
+                      // sadeappg6E (9:18)
+                      'SAÚDE APP',
+                      style: SafeGoogleFont(
+                        'Catamaran',
+                        fontSize: 36 * ffem,
+                        fontWeight: FontWeight.w400,
+                        height: 1.64 * ffem / fem,
+                        color: Color(0xff000000),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                // loadingiconxZY (9:22)
+                margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 1 * fem, 0 * fem),
+                width: 50 * fem,
+                height: 50 * fem,
+                child: Image.asset(
+                  'assets/icons/loading_icon.png',
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ],
           ),
-          SizedBox(
-            width: 50,
-            height: 50,
-            child: LoadingAnimationWidget.hexagonDots(
-                color: Colors.black, size: 50),
-          )
-        ],
+        ),
       ),
-    ));
+    );
   }
 }
