@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 //import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_application_saude_app/utils.dart';
 import 'package:flutter_application_saude_app/ui/registerscreenpro.dart';
+import 'package:flutter_application_saude_app/ui/registerscreenpatient.dart';
 
 class PreLogin extends StatelessWidget {
   @override
@@ -145,7 +146,13 @@ class PreLogin extends StatelessWidget {
             ),
             TextButton(
               // enterpaciNve (260:57)
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => RegisterScreenPatient()),
+                );
+              },
               style: TextButton.styleFrom(
                 padding: EdgeInsets.zero,
               ),
