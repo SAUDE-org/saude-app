@@ -1577,7 +1577,7 @@ class FindDoctorScreen extends StatelessWidget {
                         width: 35 * fem,
                         height: 33 * fem,
                         child: Image.asset(
-                          'assets/page-1/images/searchicon-9nJ.png',
+                          'assets/icons/search_lens.png',
                           fit: BoxFit.cover,
                         ),
                       ),
