@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_saude_app/utils.dart';
 
-class Scene extends StatelessWidget {
+class FindDoctorScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 375;
