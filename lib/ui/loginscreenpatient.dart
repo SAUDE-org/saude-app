@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_saude_app/utils.dart';
+import 'package:flutter_application_saude_app/ui/patientscreen.dart';
+import 'package:flutter_application_saude_app/ui/passwordresetpatient.dart';
 
 class LoginScreenPatient extends StatelessWidget {
   @override
@@ -128,7 +130,12 @@ class LoginScreenPatient extends StatelessWidget {
               margin:
                   EdgeInsets.fromLTRB(52 * fem, 0 * fem, 53 * fem, 88.54 * fem),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => PatientScreen()),
+                  );
+                },
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.zero,
                 ),
@@ -158,7 +165,13 @@ class LoginScreenPatient extends StatelessWidget {
               // esqueciminhasenhaYCA (127:39)
               margin: EdgeInsets.fromLTRB(1 * fem, 0 * fem, 0 * fem, 0 * fem),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => PasswordResetPatient()),
+                  );
+                },
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.zero,
                 ),
