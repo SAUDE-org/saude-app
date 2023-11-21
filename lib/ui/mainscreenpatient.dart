@@ -92,7 +92,7 @@ class MainScreenPatient extends StatelessWidget {
                               width: 100 * fem,
                               height: 100 * fem,
                               child: Image.asset(
-                                'assets/page-1/images/cardididentificationidentityprofileicon-1-55t.png',
+                                'assets/icons/profile_identify.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -286,7 +286,7 @@ class MainScreenPatient extends StatelessWidget {
                               width: 75 * fem,
                               height: 75 * fem,
                               child: Image.asset(
-                                'assets/page-1/images/medicoimg-HXG.png',
+                                'assets/icons/medico_consult.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -319,7 +319,7 @@ class MainScreenPatient extends StatelessWidget {
                           width: 75 * fem,
                           height: 75 * fem,
                           child: Image.asset(
-                            'assets/page-1/images/examesimg-7Mk.png',
+                            'assets/icons/exames.png',
                             fit: BoxFit.cover,
                           ),
                         ),
