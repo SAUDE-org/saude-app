@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 //import 'package:flutter/gestures.dart';
 //import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_application_saude_app/utils.dart';
+import 'package:flutter_application_saude_app/ui/loginscreenpatient.dart';
 
 class RegisterScreenPatient extends StatelessWidget {
   @override
@@ -151,7 +152,13 @@ class RegisterScreenPatient extends StatelessWidget {
               margin:
                   EdgeInsets.fromLTRB(52 * fem, 0 * fem, 53 * fem, 50 * fem),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => LoginScreenPatient()),
+                  );
+                },
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.zero,
                 ),
@@ -181,7 +188,13 @@ class RegisterScreenPatient extends StatelessWidget {
               // jtemcontafaaloginqFG (3:38)
               margin: EdgeInsets.fromLTRB(15 * fem, 0 * fem, 0 * fem, 0 * fem),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => LoginScreenPatient()),
+                  );
+                },
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.zero,
                 ),
