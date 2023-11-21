@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_saude_app/utils.dart';
+import 'package:flutter_application_saude_app/ui/mainscreenpatient.dart';
 
 class PatientScreen extends StatelessWidget {
   @override
@@ -274,7 +275,13 @@ class PatientScreen extends StatelessWidget {
                     margin: EdgeInsets.fromLTRB(
                         52 * fem, 0 * fem, 60.06 * fem, 40 * fem),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MainScreenPatient()),
+                        );
+                      },
                       style: TextButton.styleFrom(
                         padding: EdgeInsets.zero,
                       ),
@@ -305,7 +312,13 @@ class PatientScreen extends StatelessWidget {
                     margin: EdgeInsets.fromLTRB(
                         4.94 * fem, 0 * fem, 0 * fem, 0 * fem),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MainScreenPatient()),
+                        );
+                      },
                       style: TextButton.styleFrom(
                         padding: EdgeInsets.zero,
                       ),
