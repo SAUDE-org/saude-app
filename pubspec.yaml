@@ -45,18 +45,27 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/icons/searchicon.png
+    - assets/icons/cross.png
+    - assets/icons/exames.png
     - assets/icons/healthcare_hospital_iconv2.png
+    - assets/icons/historico.png
     - assets/icons/loading_icon.png
     - assets/icons/logo_pre.png
     - assets/icons/logo_splash_screen.png
     - assets/icons/medical_medicine_icon.png
+    - assets/icons/medico_consult.png
+    - assets/icons/medico_presc.png
+    - assets/icons/medico_sit.png
+    - assets/icons/profile_identify.png
+    - assets/icons/search_cross.png
+    - assets/icons/search_lens.png
     - assets/screens/healthcarehospitalicon-1-ErW.png
     - assets/screens/healthcarehospitalicon-1.png
+    - assets/screens/healthcarehospitaliconv3-1.png
     - assets/screens/home_screen.png
     - assets/screens/loading_screen.png
     - assets/screens/login_screen.png
-    - assets/screens/healthcarehospitaliconv3-1.png
+
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
