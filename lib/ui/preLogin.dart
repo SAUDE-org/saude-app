@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 //import 'dart:ui';
 //import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_application_saude_app/utils.dart';
+import 'package:flutter_application_saude_app/ui/registerscreenpro.dart';
 
 class PreLogin extends StatelessWidget {
   @override
@@ -74,7 +75,13 @@ class PreLogin extends StatelessWidget {
               // enterprojUN (265:223)
               margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 45 * fem),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => RegisterScreenPro()),
+                  );
+                },
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.zero,
                 ),
@@ -104,7 +111,13 @@ class PreLogin extends StatelessWidget {
               // enterprokeN (260:54)
               margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 45 * fem),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => RegisterScreenPro()),
+                  );
+                },
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.zero,
                 ),
