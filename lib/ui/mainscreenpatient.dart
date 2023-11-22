@@ -318,35 +318,51 @@ class MainScreenPatient extends StatelessWidget {
                     // examesVRt (78:112)
                     margin:
                         EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 9 * fem),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          // examesimgpj4 (78:113)
-                          width: 75 * fem,
-                          height: 75 * fem,
-                          child: Image.asset(
-                            'assets/icons/exames.png',
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        Container(
-                          // examestexty6A (78:114)
-                          margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 5 * fem, 0 * fem),
-                          child: Text(
-                            'Exames',
-                            textAlign: TextAlign.center,
-                            style: SafeGoogleFont(
-                              'Catamaran',
-                              fontSize: 16 * ffem,
-                              fontWeight: FontWeight.w400,
-                              height: 1.64 * ffem / fem,
-                              color: Color(0xff07b4ba),
+
+                    child: TextButton(
+                      //ExemScreen
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => FindDoctorScreen()),
+                        );
+                      },
+                      style: TextButton.styleFrom(
+                        padding: EdgeInsets.zero,
+                      ),
+                      child: Container(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              // examesimgpj4 (78:113)
+                              width: 75 * fem,
+                              height: 75 * fem,
+                              child: Image.asset(
+                                'assets/icons/exames.png',
+                                fit: BoxFit.cover,
+                              ),
                             ),
-                          ),
+                            Container(
+                              // examestexty6A (78:114)
+                              margin: EdgeInsets.fromLTRB(
+                                  0 * fem, 0 * fem, 5 * fem, 0 * fem),
+                              child: Text(
+                                'Exames',
+                                textAlign: TextAlign.center,
+                                style: SafeGoogleFont(
+                                  'Catamaran',
+                                  fontSize: 16 * ffem,
+                                  fontWeight: FontWeight.w400,
+                                  height: 1.64 * ffem / fem,
+                                  color: Color(0xff07b4ba),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
                   ),
                 ],
