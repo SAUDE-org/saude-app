@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_saude_app/utils.dart';
-import 'package:flutter_application_saude_app/ui/examcreen.dart';
+import 'package:flutter_application_saude_app/ui/examscreen.dart';
 import 'package:flutter_application_saude_app/ui/finddoctorscreen.dart';
 
 class MainScreenPatient extends StatelessWidget {
