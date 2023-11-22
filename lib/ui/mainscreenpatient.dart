@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_saude_app/utils.dart';
+import 'package:flutter_application_saude_app/ui/examcreen.dart';
 import 'package:flutter_application_saude_app/ui/finddoctorscreen.dart';
 
 class MainScreenPatient extends StatelessWidget {
@@ -320,12 +321,10 @@ class MainScreenPatient extends StatelessWidget {
                         EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 9 * fem),
 
                     child: TextButton(
-                      //ExemScreen
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => FindDoctorScreen()),
+                          MaterialPageRoute(builder: (context) => ExamScreen()),
                         );
                       },
                       style: TextButton.styleFrom(
