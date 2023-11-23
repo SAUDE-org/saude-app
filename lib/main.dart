@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_saude_app/utils.dart';
-import 'package:flutter_application_saude_app/ui/preLogin.dart';
+import 'screens/splash.dart';
 
 void main() => runApp(const SaudeApp());
 
@@ -10,16 +9,11 @@ class SaudeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'SaudeApp',
-      debugShowCheckedModeBanner: false,
-      scrollBehavior: MyCustomScrollBehavior(),
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(
-        body: SingleChildScrollView(
-          child: PreLogin(),
-        ),
-      ),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+          useMaterial3: true),
+      home: const SplashScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
