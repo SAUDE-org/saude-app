@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
 import 'screens/splash.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
+import "package:flutter/material.dart";
 
-void main() => runApp(const SaudeApp());
+void main() async {
+  await Firebase.initializeApp();
+
+  FirebaseFirestore.instance.collection('contact').doc().set({
+    'name': 'Elildes',
+    'phone': '(84) 9 9654-8765',
+    'e-mail': 'elildes@elildes.com'
+  });
+
+  runApp(const SaudeApp());
+}
 
 class SaudeApp extends StatelessWidget {
   const SaudeApp({super.key});
