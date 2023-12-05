@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "987148292368",
+    "project_id": "saude-app-81620",
+    "storage_bucket": "saude-app-81620.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987148292368:android:c676495fa6da7ddb591595",
+        "android_client_info": {
+          "package_name": "br.com.fzstos.flutter_application_saude_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsoWUyNrB9PWUWgkBBhyYHMxii2I9OWq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
