@@ -13,8 +13,6 @@ Future<void> main() async {
   runApp(SaudeApp());
 }
 
-//void main() => runApp(const SaudeApp());
-
 class SaudeApp extends StatelessWidget {
   const SaudeApp({super.key});
   @override
