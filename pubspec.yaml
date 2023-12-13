@@ -24,8 +24,7 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^2.0.0
-  supabase_flutter: ^1.10.25
-  
+
 # The following section is specific to Flutter packages.
 flutter:
 
