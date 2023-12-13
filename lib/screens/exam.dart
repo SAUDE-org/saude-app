@@ -23,7 +23,7 @@ class _ExamScreen extends State<ExamScreen> {
       ),
       body: Column(
         children: <Widget>[
-          myTextField('Buscar', false),
+          //myTextField('Buscar', false),
           myButtonTheme(100.0, 50.0, Colors.blue, 'Buscar', () {}, context),
           Expanded(
             child: SingleChildScrollView(

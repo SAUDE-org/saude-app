@@ -46,8 +46,8 @@ class _LoginScreen extends State<LoginScreen> {
                 ),
               ),
             ),
-            myTextField("Login", false),
-            myTextField("Senha", true),
+            //myTextField("Login", false),
+            //myTextField("Senha", true),
             const Padding(padding: EdgeInsets.only(top: 25.0)),
             myButtonTheme(
                 250.0, 50.0, Colors.blue, "Entrar", goToHome, context),

@@ -84,18 +84,15 @@ class _DoctorRegisterScreenState extends State<DoctorRegisterScreen> {
   final TextEditingController _nomeController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _crmController = TextEditingController();
-  final TextEditingController _enderecoController = TextEditingController();
-  final TextEditingController _senhaController = TextEditingController();
 
   Future<void> _cadastrar() async {
     try {
       final response =
-          await Supabase.instance.client.from('profissional').upsert([
+          await Supabase.instance.client.from('profissional').insert([
         {
           'nome': _nomeController.text,
           'email': _emailController.text,
           'crm': _crmController.text,
-          'senha': _senhaController.text,
         }
       ]);
       //.onConflict('nome', onConflictDoNothing: true)
@@ -160,15 +157,6 @@ class _DoctorRegisterScreenState extends State<DoctorRegisterScreen> {
               TextField(
                 controller: _crmController,
                 decoration: InputDecoration(labelText: 'CRM'),
-              ),
-              TextField(
-                controller: _enderecoController,
-                decoration: InputDecoration(labelText: 'Ebdereço'),
-              ),
-              TextField(
-                controller: _senhaController,
-                decoration: InputDecoration(labelText: 'Senha'),
-                obscureText: true,
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 20.0),
