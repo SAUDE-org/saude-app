@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-Widget myTextField(String name, bool hideText) {
+Widget myTextField(String name, bool hideText,
+    {required Future<Null> Function(dynamic nome) onFieldSubmitted}) {
   return Padding(
     padding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
     child: TextFormField(
